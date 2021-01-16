@@ -1,0 +1,6 @@
+{
+    "id": "60010ad888148b4cb54a88cd",
+    "name": "url_slack_mongodb",
+    "value": "url_slack_hackernews_comments",
+    "from_secret": true
+}

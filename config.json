@@ -1,0 +1,15 @@
+{
+    "app_id": "hackernews-bot-yjdjg",
+    "config_version": 20200603,
+    "name": "hackernews-bot",
+    "location": "IE",
+    "deployment_model": "LOCAL",
+    "security": {},
+    "custom_user_data_config": {
+        "enabled": false
+    },
+    "sync": {
+        "development_mode_enabled": false
+    },
+    "environment": "none"
+}

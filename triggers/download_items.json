@@ -1,0 +1,19 @@
+{
+    "id": "5fff9f51d3a8b5f71143b2a7",
+    "name": "download_items",
+    "type": "DATABASE",
+    "config": {
+        "operation_types": [
+            "INSERT"
+        ],
+        "database": "bot",
+        "collection": "jobs",
+        "service_name": "mongodb-atlas",
+        "match": {},
+        "project": {},
+        "full_document": false,
+        "unordered": true
+    },
+    "function_name": "download_items",
+    "disabled": false
+}

@@ -1,0 +1,34 @@
+{
+    "id": "600122ed63ebd081df75cefb",
+    "name": "slack_realm",
+    "type": "DATABASE",
+    "config": {
+        "operation_types": [
+            "INSERT"
+        ],
+        "database": "hn",
+        "collection": "items",
+        "service_name": "mongodb-atlas",
+        "match": {
+            "$or": [
+                {
+                    "fullDocument.title": {
+                        "$regex": "((mongodb|mongo|mdb) *realm|realm *(database|db|sdk|client|swift|java|js))",
+                        "$options": "i"
+                    }
+                },
+                {
+                    "fullDocument.text": {
+                        "$regex": "((mongodb|mongo|mdb) *realm|realm *(database|db|sdk|client|swift|java|js))",
+                        "$options": "i"
+                    }
+                }
+            ]
+        },
+        "project": {},
+        "full_document": false,
+        "unordered": false
+    },
+    "function_name": "send_to_Slack_HN_Realm",
+    "disabled": false
+}

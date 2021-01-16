@@ -1,0 +1,10 @@
+{
+    "id": "6000ea9288148b4cb53322e3",
+    "name": "update_jobs_retry_downloads",
+    "type": "SCHEDULED",
+    "config": {
+        "schedule": "0 */1 * * *"
+    },
+    "function_name": "retry_downloads",
+    "disabled": false
+}

@@ -1,0 +1,11 @@
+{
+    "id": "5ffe08b2ba6ad00b7086cea6",
+    "name": "mongodb-atlas",
+    "type": "mongodb-atlas",
+    "config": {
+        "clusterName": "hackernews",
+        "readPreference": "primary",
+        "wireProtocolEnabled": false
+    },
+    "version": 1
+}

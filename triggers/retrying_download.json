@@ -1,0 +1,23 @@
+{
+    "id": "6000db8fa05df6d040ef8107",
+    "name": "retrying_download",
+    "type": "DATABASE",
+    "config": {
+        "operation_types": [
+            "UPDATE"
+        ],
+        "database": "bot",
+        "collection": "jobs",
+        "service_name": "mongodb-atlas",
+        "match": {
+            "updateDescription.updatedFields": {
+                "status": "retrying"
+            }
+        },
+        "project": {},
+        "full_document": true,
+        "unordered": true
+    },
+    "function_name": "download_items",
+    "disabled": false
+}
